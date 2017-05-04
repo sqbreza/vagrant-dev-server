@@ -62,9 +62,17 @@ installpkg mariadb-server
 echo "----- Provision: Installing composer..."
 installComposer
 
+
+# Node and NPM
+echo "----- Provision: Installing node js and npm..."
+installNodeNPM
+
 # MongoDB
 echo "----- Provision: Installing MongoDB..."
 installMongoDB
+
+
+
 
 # Apache
 echo "----- Provision: Installing apache..."
