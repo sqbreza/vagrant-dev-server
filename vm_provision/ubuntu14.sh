@@ -12,7 +12,7 @@ installMariaDB(){
 	apt-get update
 }
 
-installComnposer(){
+installComposer(){
 	echo -e "\n--- Installing Composer for PHP package management ---\n"
 	curl --silent https://getcomposer.org/installer | php > /dev/null 2>&1
 	mv composer.phar /usr/local/bin/composer
@@ -36,6 +36,7 @@ installMongoDB(){
 installNodeNPM(){
 	sudo apt-get update
 	sudo apt-get install -y nodejs
+	sudo apt-get update
 	sudo apt-get install -y npm
 }
 
@@ -59,7 +60,7 @@ installpkg mariadb-server
 
 # Composer
 echo "----- Provision: Installing composer..."
-installComnposer
+installComposer
 
 # MongoDB
 echo "----- Provision: Installing MongoDB..."
