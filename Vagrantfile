@@ -23,5 +23,5 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   v.memory = 1024
   end
   
-  config.vm.provision "shell", path: "vm_provision/ubuntu14.sh"
+  config.vm.provision "shell", path: "vm_provision/script.sh"
 end
